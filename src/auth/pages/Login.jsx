@@ -1,15 +1,16 @@
-import loginImage from "../../assets/images/login.png";
+import loginImage from "../../assets/images/image.png";
+// import loginImage from "../../assets/images/login.png";
 import logo from "../../assets/images/logo.png";
 
 const LoginPage = () => {
   return (
-    <div className="h-screen grid grid-cols-1 lg:grid-cols-2">
-      {/* IMAGE SECTION – 50% */}
+    <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+      {/* IMAGE SECTION */}
       <div className="hidden lg:flex">
         <img
           src={loginImage}
           alt="Fashion"
-          className=" w-full h-full object-cover"
+          className=" w-full max-w-[100%] h-full max-h-screen object-cover"
         />
       </div>
 
