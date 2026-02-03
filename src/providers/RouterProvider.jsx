@@ -10,12 +10,14 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import AuthLayout from "../Layout/AuthLayout";
 import LoginPage from "../Auth/Pages/Login";
+import OtpPage from "../auth/pages/OtpPage";
 
 export const router = createBrowserRouter([
   {
     element: <AuthLayout />,
     children: [
       { path: "/login", element: <LoginPage /> },
+      { path: "/verify-otp", element: <OtpPage /> },
       //   { path: "/signup", element: <Signup /> },
     ],
   },
